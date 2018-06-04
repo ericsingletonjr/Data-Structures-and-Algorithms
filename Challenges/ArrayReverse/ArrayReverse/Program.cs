@@ -6,7 +6,7 @@ namespace ArrayReverse
     {
         static void Main(string[] args)
         {
-            int[] inputArray = new int[] { 1, 2, 3, 4, 5, 6 };
+            int[] inputArray = new int[] { 23, 55, 321, 1089, -12, 3};
             ArrayReverse(inputArray);
         }
         public static void ArrayReverse(int[] inputArray)

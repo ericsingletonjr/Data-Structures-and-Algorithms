@@ -5,4 +5,4 @@ reverseArray is a method that takes the inputted array and will return a reverse
 * Not using built in Array methods
 ***
 ## Solution
-![ArrayReverse whiteboard image](../../assets/array-reverse-whiteboard01.JPG)
+![ArrayReverse whiteboard image](../../assets/array_reverse.JPG)
