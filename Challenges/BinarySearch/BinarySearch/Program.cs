@@ -7,7 +7,7 @@ namespace BinarySearch
         static void Main(string[] args)
         {
             int[] dataSet = new int[] { 4, 8, 15, 16, 23, 42 };
-            int searchKey = 50;
+            int searchKey = 16;
 
             Console.WriteLine(BinarySearch(dataSet, searchKey));
             Console.ReadLine();
