@@ -8,10 +8,10 @@ namespace AdjacentProduct
         {
             int[,] dataSet = new int[,] { { 1, 2, 1 }, { 2, 4, 2 }, { 3, 6, 8 }, { 7, 8, 1 } };
 
-            Console.WriteLine(AdjacentProduct(dataSet));
+            Console.WriteLine(LargestProduct(dataSet));
         }
 
-        public static int AdjacentProduct(int[,] dataSet)
+        public static int LargestProduct(int[,] dataSet)
         {
             int largestValue = 0, dataSetJ = dataSet.GetLength(0), dataSetI = dataSet.GetLength(1);
 
