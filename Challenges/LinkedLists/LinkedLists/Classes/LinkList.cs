@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    class LinkList
+    public class LinkList
     {
         /// <summary>
         /// This sets the member values to expect a 
