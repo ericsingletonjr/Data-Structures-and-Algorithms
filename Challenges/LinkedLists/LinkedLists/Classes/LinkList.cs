@@ -92,7 +92,6 @@ namespace LinkedLists.Classes
             }
             return Current;
         }
-        //AddAfter a node (newNode, selectNode)
         /// <summary>
         /// Method to insert a new node after the selected node
         /// </summary>
