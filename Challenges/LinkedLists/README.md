@@ -24,4 +24,4 @@ There consist a LinkList Class (to avoid fighting VS intellisense) and a Node Cl
 Unit tests are provided with this challenge
 ***
 ## Visual
-![LinkedList whiteboard image](../../assets/linked_list.JPG)
+![LinkedList whiteboard image](../../assets/linked_list.jpg)
