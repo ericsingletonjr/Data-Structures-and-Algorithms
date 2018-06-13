@@ -1,4 +1,4 @@
-# Data Structres and Algorithms
+# Data Structures and Algorithms
 ***
 ## Completed DSA Challenges and Implementations
 1. [ArrayReverse](/Challenges/ArrayReverse/README.md)
