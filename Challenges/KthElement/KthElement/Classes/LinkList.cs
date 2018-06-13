@@ -130,5 +130,27 @@ namespace KthElement.Classes
             Current.Next = newNode;          
             return Current;
         }
+        /// <summary>
+        /// Method that takes the give value and returns the node that is
+        /// the value from the end of the linked list
+        /// </summary>
+        /// <param name="k">Position of the node you wish to return</param>
+        /// <returns>Node at value k or null if it doesn't exist</returns>
+        public Node KthElement(int k)
+        {
+            Current = Head;
+            Node checker = Head;
+            int counter = 0;
+
+            while (checker.Next != null)
+            {
+                counter++;
+                checker = checker.Next;
+                if (counter > k) Current = Current.Next;
+            }
+            if (k > counter) return null;
+            return Current;
+        }
+        
     }
 }
