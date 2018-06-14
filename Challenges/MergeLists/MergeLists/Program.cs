@@ -20,12 +20,12 @@ namespace MergeLists
             listOne.Print();
             listTwo.Print();
 
-            LinkList listThree = Merge(listOne, listTwo);
+            LinkList listThree = MergeLists(listOne, listTwo);
             listThree.Print();
             
         }
 
-        public static LinkList Merge(LinkList listOne, LinkList listTwo)
+        public static LinkList MergeLists(LinkList listOne, LinkList listTwo)
         {
             listOne.Current = listOne.Head;
             listTwo.Current = listTwo.Head;

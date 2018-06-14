@@ -18,7 +18,7 @@ namespace MergeListTest
             LinkList listTwo = new LinkList(new Node(45));
             listTwo.Add(new Node(16));
 
-            LinkList listThree = Program.Merge(listOne, listTwo);
+            LinkList listThree = Program.MergeLists(listOne, listTwo);
             Assert.NotNull(listThree);
         }
         [Fact]
@@ -32,7 +32,7 @@ namespace MergeListTest
             listTwo.Add(new Node(16));
             listTwo.Add(new Node(5));
 
-            LinkList listThree = Program.Merge(listOne, listTwo);
+            LinkList listThree = Program.MergeLists(listOne, listTwo);
             Assert.Equal(listThree.Head.Value, listOne.Head.Value);
         }
         [Fact]
@@ -46,7 +46,7 @@ namespace MergeListTest
             listTwo.Add(new Node(16));
             listTwo.Add(new Node(5));
 
-            LinkList listThree = Program.Merge(listOne, listTwo);
+            LinkList listThree = Program.MergeLists(listOne, listTwo);
             listThree.Current = listThree.Head;
             Assert.Equal(listThree.Current.Next.Value, listTwo.Head.Value);
         }
