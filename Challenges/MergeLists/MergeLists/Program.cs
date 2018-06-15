@@ -21,6 +21,9 @@ namespace MergeLists
             listTwo.Print();
 
             LinkList listThree = MergeLists(listOne, listTwo);
+            Console.WriteLine("----");
+            listOne.Print();
+            listTwo.Print();
             listThree.Print();
             
         }
