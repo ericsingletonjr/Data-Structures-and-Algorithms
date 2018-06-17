@@ -9,6 +9,7 @@ namespace StackAndQueue
         {
             Console.WriteLine("Hello World!");
             Stack();
+            Console.WriteLine("-------");
             Queue();
         }
 
@@ -20,11 +21,15 @@ namespace StackAndQueue
             stack.Push(new Node(7));
 
             stack.Print();
-            Console.WriteLine(stack.Peek().Value);
+            Console.WriteLine("Top: "+stack.Peek().Value);
 
             stack.Pop();
             stack.Print();
-            Console.WriteLine(stack.Peek().Value);
+            Console.WriteLine("Top: "+stack.Peek().Value);
+
+            stack.Pop();
+            stack.Print();
+            Console.WriteLine("Top: "+stack.Peek().Value);
         }
 
         static void Queue()
@@ -35,11 +40,15 @@ namespace StackAndQueue
             queue.Enqueue(new Node(8));
 
             queue.Print();
-            Console.WriteLine(queue.Peek().Value);
+            Console.WriteLine("Front:"+queue.Peek().Value);
 
             queue.Dequeue();
             queue.Print();
-            Console.WriteLine(queue.Peek().Value);
+            Console.WriteLine("Front:"+queue.Peek().Value);
+
+            queue.Dequeue();
+            queue.Print();
+            Console.WriteLine("Front:"+queue.Peek().Value);
         }
     }
 }
