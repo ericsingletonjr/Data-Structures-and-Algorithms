@@ -7,12 +7,10 @@ namespace StackAndQueue.Classes
     public class Stack
     {
         public Node Top { get; set; }
-        public Node Current { get; set; }
 
         public Stack(Node node)
         {
             Top = node;
-            Current = node;
         }
         /// <summary>
         /// Method that will add a new node to the top of
@@ -23,18 +21,18 @@ namespace StackAndQueue.Classes
         {
             node.Next = Top;
             Top = node;
-            Current = node;
         }
         /// <summary>
         /// Method that will remove the top node from the
         /// stack
         /// </summary>
-        /// <returns>New top node or null if empty</returns>
+        /// <returns>Popped node</returns>
         public Node Pop()
         {
-            Current = Top.Next;
-            Top = Current;
-            return Top ?? null;
+            Node temp = Top;
+            Top = temp.Next;
+            temp.Next = null;
+            return temp;
         }
         /// <summary>
         /// Method that looks at the top of the stack
@@ -42,14 +40,14 @@ namespace StackAndQueue.Classes
         /// <returns>Top node or null if empty</returns>
         public Node Peek()
         {
-            return Top ?? null;
+            return Top;
         }
         /// <summary>
         /// Method that traverses and prints the stack order
         /// </summary>
         public void Print()
         {
-            Current = Top;
+             Node Current = Top;
 
             while(Current.Next != null)
             {

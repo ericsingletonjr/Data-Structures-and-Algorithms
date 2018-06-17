@@ -24,8 +24,7 @@ namespace StackAndQueueTests
             stack.Push(new Node(5));
             stack.Push(new Node(7));
 
-            stack.Pop();
-
+            Assert.Equal(7, stack.Pop().Value);
             Assert.Equal(5, stack.Peek().Value);
         }
         [Fact]
@@ -62,8 +61,8 @@ namespace StackAndQueueTests
             queue.Enqueue(new Node(6));
             queue.Enqueue(new Node(8));
 
-            queue.Dequeue();
-
+            
+            Assert.Equal(2, queue.Dequeue().Value);
             Assert.Equal(4, queue.Peek().Value);
         }
         [Fact]

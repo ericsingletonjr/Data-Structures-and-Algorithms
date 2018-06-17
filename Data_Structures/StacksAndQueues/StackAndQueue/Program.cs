@@ -23,13 +23,13 @@ namespace StackAndQueue
             stack.Print();
             Console.WriteLine("Top: "+stack.Peek().Value);
 
-            stack.Pop();
+            Node popped = stack.Pop();
             stack.Print();
-            Console.WriteLine("Top: "+stack.Peek().Value);
+            Console.WriteLine("Top: "+stack.Peek().Value+" Popped: "+popped.Value);
 
-            stack.Pop();
+            popped = stack.Pop();
             stack.Print();
-            Console.WriteLine("Top: "+stack.Peek().Value);
+            Console.WriteLine("Top: "+stack.Peek().Value+" Popped: "+popped.Value);
         }
 
         static void Queue()
@@ -42,13 +42,13 @@ namespace StackAndQueue
             queue.Print();
             Console.WriteLine("Front:"+queue.Peek().Value);
 
-            queue.Dequeue();
+            Node dequeue = queue.Dequeue();
             queue.Print();
-            Console.WriteLine("Front:"+queue.Peek().Value);
+            Console.WriteLine("Front:"+queue.Peek().Value+" Dequeued: " + dequeue.Value);
 
-            queue.Dequeue();
+            dequeue = queue.Dequeue();
             queue.Print();
-            Console.WriteLine("Front:"+queue.Peek().Value);
+            Console.WriteLine("Front:"+queue.Peek().Value+ " Dequeued: " + dequeue.Value);
         }
     }
 }

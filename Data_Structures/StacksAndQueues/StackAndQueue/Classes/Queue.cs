@@ -7,12 +7,12 @@ namespace StackAndQueue.Classes
     public class Queue
     {
         public Node Front { get; set; }
-        public Node Current { get; set; }
+        public Node Rear { get; set; }
 
         public Queue(Node node)
         {
             Front = node;
-            Current = node;
+            Rear = node;
         }
         /// <summary>
         /// Method to add a node to the back of
@@ -21,34 +21,36 @@ namespace StackAndQueue.Classes
         /// <param name="node">New node to add</param>
         public void Enqueue(Node node)
         {
-            Current.Next = node;
-            Current = node;
+            Rear.Next = node;
+            Rear = node;
         }
         /// <summary>
         /// Method to remove the node from the front of 
         /// the queue
         /// </summary>
-        /// <returns>The new front node in the queue or null if none</returns>
+        /// <returns>The dequeued node</returns>
         public Node Dequeue()
         {
-            Current = Front.Next;
-            Front = Current;
-            return Front ?? null;
+            Node temp = Front;
+            Front = temp.Next;
+            temp.Next = null;
+
+            return temp;
         }
         /// <summary>
         /// Method that looks at the front of the queue
         /// </summary>
-        /// <returns>The front node in the queue or null if none</returns>
+        /// <returns>Front node or null</returns>
         public Node Peek()
         {
-            return Front ?? null;
+            return Front;
         }
         /// <summary>
         /// Method that traverses and prints out the queue order
         /// </summary>
         public void Print()
         {
-            Current = Front;
+            Node Current = Front;
             while(Current.Next != null)
             {
                 Console.Write($"{Current.Value}-->");
