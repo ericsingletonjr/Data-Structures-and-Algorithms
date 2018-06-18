@@ -22,4 +22,4 @@ After learning about the concept of stacks and queues, implement the following f
 Unit tests are provided with this challenge
 ***
 ## Visual
-![Stack and Queue whiteboard image](../../assets/stack_queue.jpg)
+![Stack and Queue whiteboard image](../../assets/stack_queue.JPG)
