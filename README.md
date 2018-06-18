@@ -6,3 +6,6 @@
 3. [AdjacentProduct](/Challenges/AdjacentProduct/README.md)
 4. [KthElement](/Challenges/KthElement/README.md)
 5. [MergeLists](/Challenges/MergeLists/README.md)
+***
+* [Linked List](/Data_Structures/LinkedLists/README.md)
+* [Stacks and Queues](/Data_Structures/StacksAndQueues/README.md)
