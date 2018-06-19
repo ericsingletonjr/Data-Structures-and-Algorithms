@@ -27,7 +27,15 @@ namespace MergeLists
             listThree.Print();
             
         }
-
+        /// <summary>
+        /// Method that takes in two separate lists
+        /// and merges them in a Zip pattern. It takes the current of
+        /// each list and compares them if they are null and iterates
+        /// until the completion of the list
+        /// </summary>
+        /// <param name="listOne">Linked List One</param>
+        /// <param name="listTwo">Linked List Two</param>
+        /// <returns>A merged Linked List</returns>
         public static LinkList MergeLists(LinkList listOne, LinkList listTwo)
         {
             listOne.Current = listOne.Head;
