@@ -8,7 +8,7 @@ namespace StackAndQueue
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Stack();
+            //Stack();
             Console.WriteLine("-------");
             Queue();
         }
