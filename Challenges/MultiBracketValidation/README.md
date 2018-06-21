@@ -11,12 +11,12 @@ three types of brackets:
 
 #### Examples
 
-Input: `{}` Output: True
-Input: `{}()[]` Output: True
-Input: `{[]}(Other){characters}` Output: True
-Input: `{(})` Output: False
-Input: `{([)}]` Output: False
-Input: `)[]({[]})` Output: False
+* Input: `{}` Output: True
+* Input: `{}()[]` Output: True
+* Input: `{[]}(Other){characters}` Output: True
+* Input: `{(})` Output: False
+* Input: `{([)}]` Output: False
+* Input: `)[]({[]})` Output: False
 
 * Unit Tests are included
 
