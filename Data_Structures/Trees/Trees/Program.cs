@@ -37,6 +37,14 @@ namespace Trees
             Console.ReadLine();
             Console.Clear();
 
+            //4-2-5-1-3
+            binaryTree.InOrder(binaryTree.Root);
+            Console.WriteLine("------");
+            //10-25-50-60-72-75-80
+            BST.InOrder(BST.Root);
+            Console.ReadLine();
+            Console.Clear();
+
             //4-5-2-3-1
             binaryTree.PostOrder(binaryTree.Root);
             Console.WriteLine("------");
