@@ -6,7 +6,7 @@ A binary search tree (BST) implements a binary tree but also sorts the incoming 
 ### Uses
 1. Since Binary Tree itself is rather the family of this kind of data structure, they are used to build other tree implementations such as Binary Search Trees.
 2. Binary Search Trees are useful for the storage of changing data but is organized in a specific manner
-3. 
+3. Used in determining polygons and space rendering in game development
 
 ## Challenge
 After learning about BT and BST, implement the following functionality
