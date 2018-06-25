@@ -11,4 +11,5 @@
 6. [QueueWithStacks](/Challenges/QueueWithStacks/README.md)
 7. [FIFOAnimalShelter](/Challenges/FIFOAnimalShelter/README.md)
 8. [MultiBracketValidation](/Challenges/MultiBracketValidation/README.md)
+* [BinaryTree and BinarySearchTree](/Data_Structures/Trees/README.md)
 ***
