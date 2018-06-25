@@ -21,6 +21,7 @@ namespace Trees
             BST.Add(new Node(72), BST.Root);
             BST.Add(new Node(80), BST.Root);
 
+            Console.WriteLine("BreadthFirst()");
             //1-2-3-4-5
             binaryTree.BreadthFirst(binaryTree.Root);
             Console.WriteLine("------");
@@ -29,6 +30,7 @@ namespace Trees
             Console.ReadLine();
             Console.Clear();
 
+            Console.WriteLine("PreOrder()");
             //1-2-4-5-3
             binaryTree.PreOrder(binaryTree.Root);
             Console.WriteLine("------");
@@ -37,6 +39,7 @@ namespace Trees
             Console.ReadLine();
             Console.Clear();
 
+            Console.WriteLine("InOrder()");
             //4-2-5-1-3
             binaryTree.InOrder(binaryTree.Root);
             Console.WriteLine("------");
@@ -45,6 +48,7 @@ namespace Trees
             Console.ReadLine();
             Console.Clear();
 
+            Console.WriteLine("PostOrder()");
             //4-5-2-3-1
             binaryTree.PostOrder(binaryTree.Root);
             Console.WriteLine("------");
