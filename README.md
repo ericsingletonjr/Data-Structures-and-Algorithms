@@ -13,4 +13,5 @@
 8. [MultiBracketValidation](/Challenges/MultiBracketValidation/README.md)
 * [BinaryTree and BinarySearchTree](/Data_Structures/Trees/README.md)
 9. [FizzBuzzTree](/Challenges/FizzBuzzTree/README.md)
+9. [FindMaximumValue](/Challenges/FindMax/README.md)
 ***
