@@ -68,6 +68,7 @@ namespace Graphs.Classes
             List<Node> order = new List<Node>();
             Queue<Node> breadth = new Queue<Node>();
             breadth.Enqueue(root);
+            root.Visited = true;
 
             while(breadth.TryPeek(out root))
             {
