@@ -30,13 +30,18 @@ namespace Graphs
             //1->2
             //2->1->3->5
             //3->2->4
+            //5->4->2->6
             //4->3->5
-            //5->4->1->6
             //6->5->7
             //7->6
-            foreach(Node child in breadth)
+            foreach (Node child in breadth)
             {
-                Console.WriteLine(child.Value);
+                Console.Write($"{child.Value}-->");
+                foreach(Node value in child.Children)
+                {
+                    Console.Write($"{value.Value}-->");
+                }
+                Console.WriteLine("X");
             }
             Console.WriteLine("-----");
             //pointD = 4
@@ -56,7 +61,6 @@ namespace Graphs
             {
                 Console.WriteLine(child.Value);
             }
-
         }
     }
 }

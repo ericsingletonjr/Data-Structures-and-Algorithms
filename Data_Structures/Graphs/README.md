@@ -21,7 +21,7 @@ Implement a graph with the following:
 * GetNeighbors() - returns a collection of nodes connected to given node 
 * Size() - returns the total number of nodes in the graph
 * BreadthFirst() - Takes root node and returns collection of of all nodes in visited order
-
+    
 Unit tests are provided with this challenge
 ***
 ## Visual
