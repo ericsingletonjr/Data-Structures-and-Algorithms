@@ -55,9 +55,10 @@ namespace GetEdges
             List<WeightedNode> nodeList = graph.GetWeightedNodes();
             int cost = 0;
             int count = 0;
+
             for (int i = 0; i < destination.Length; i++)
             {
-                if (count != i) return new { IsPossible = false, Cost = 0 };
+                if (count != i || String.IsNullOrEmpty(destination[i])) return new { IsPossible = false, Cost = 0 };
 
                 foreach (WeightedNode node in nodeList)
                 {
