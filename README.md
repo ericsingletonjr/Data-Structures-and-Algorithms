@@ -16,5 +16,6 @@
 10. [FindMaximumValue](/Challenges/FindMax/README.md)
 * [Graphs](/Data_Structures/Graphs/README.md)
 11. [GetEdges](/Challenges/GetEdges/README.md)
-11. [FindIslands](/Challenges/FindIslands/README.md)
+12. [FindIslands](/Challenges/FindIslands/README.md)
+* [HashTable](/Data_Structures/Hashtables/README.md)
 ***

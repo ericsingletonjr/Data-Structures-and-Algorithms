@@ -4,3 +4,4 @@
 2. [StacksAndQueues](/Data_Structures/StacksAndQueues/README.md)
 3. [BinaryTreeAndBinarySearchTree](/Data_Structures/Trees/README.md)
 4. [Graph](/Data_Structures/Graphs/README.md)
+5. [HashTable](/Data_Structures/Hashtables/README.md)
