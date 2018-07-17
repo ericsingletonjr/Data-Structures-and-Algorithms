@@ -18,4 +18,5 @@
 11. [GetEdges](/Challenges/GetEdges/README.md)
 12. [FindIslands](/Challenges/FindIslands/README.md)
 * [HashTable](/Data_Structures/Hashtables/README.md)
+13. [RepeatedWord](/Challenges/RepeatedWord/README.md)
 ***
