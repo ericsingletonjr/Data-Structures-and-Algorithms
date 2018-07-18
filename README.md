@@ -19,4 +19,5 @@
 12. [FindIslands](/Challenges/FindIslands/README.md)
 * [HashTable](/Data_Structures/Hashtables/README.md)
 13. [RepeatedWord](/Challenges/RepeatedWord/README.md)
+14. [TreeIntersection](/Challenges/TreeIntersection/README.md)
 ***
