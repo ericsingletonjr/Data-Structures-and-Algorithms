@@ -20,5 +20,5 @@
 * [HashTable](/Data_Structures/Hashtables/README.md)
 13. [RepeatedWord](/Challenges/RepeatedWord/README.md)
 14. [TreeIntersection](/Challenges/TreeIntersection/README.md)
-15. [LeftJoin](/Challenges/LeftJoins/README.md)
+15. [LeftJoins](/Challenges/LeftJoin/README.md)
 ***
