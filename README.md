@@ -21,4 +21,5 @@
 13. [RepeatedWord](/Challenges/RepeatedWord/README.md)
 14. [TreeIntersection](/Challenges/TreeIntersection/README.md)
 15. [LeftJoins](/Challenges/LeftJoins/README.md)
+* [Insertion Sort](/Sorting_Algorithms/InsertionSortAlgo/README.md)
 ***
