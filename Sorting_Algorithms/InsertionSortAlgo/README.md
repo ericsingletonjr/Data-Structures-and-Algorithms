@@ -6,3 +6,4 @@ Insertion Sort is a simple algorithm that is used to build a final, sorted array
 This project includs both a recursive and non-recursive implementations of the Insertion Sort Algorithm.
 
 ### Visual
+![Insertion Sort](../../assets/insertion_sort.JPG)
