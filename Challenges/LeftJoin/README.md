@@ -5,22 +5,22 @@ Given two Hash Maps, perform a simplified left joins on matching key values. If 
 
 Input: 
 HashMap 1
-at, check
-bad, thing
-dark, blue
-yellow, frank
+* at, check
+* bad, thing
+* dark, blue
+* yellow, frank
 
 HashMap 2
-at, boing
-red, thing
-dark, bright
-yellow, doodad
+* at, boing
+* red, thing
+* dark, bright
+* yellow, doodad
 
 Output
-at, check, boing
-bad, thing, null
-dark, blue, bright
-yellow, frank, doodad
+* at, check, boing
+* bad, thing, null
+* dark, blue, bright
+* yellow, frank, doodad
 
 * Unit Tests are included
 
