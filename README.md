@@ -22,4 +22,5 @@
 14. [TreeIntersection](/Challenges/TreeIntersection/README.md)
 15. [LeftJoins](/Challenges/LeftJoins/README.md)
 * [Insertion Sort](/Sorting_Algorithms/InsertionSortAlgo/README.md)
+* [Merge Sort](/Sorting_Algorithms/MergeSortAlgo/README.md)
 ***
