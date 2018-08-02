@@ -24,4 +24,5 @@
 * [Insertion Sort](/Sorting_Algorithms/InsertionSortAlgo/README.md)
 * [Merge Sort](/Sorting_Algorithms/MergeSortAlgo/README.md)
 * [Quick Sort](/Sorting_Algorithms/QuickSortAlgo/README.md)
+* [Radix Sort](/Sorting_Algorithms/RadixSortAlgo/README.md)
 ***
