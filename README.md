@@ -9,7 +9,7 @@ It also is really just to do deep dive on just about anything related
 ***
 ## Previous Iterations
 1. [First Iteration](/First_Iteration/README.md)
-* *  This was the first iteration as part of the Code Fellows 401 course. These are all done in C#
+    * This was the first iteration as part of the Code Fellows 401 course. These are all done in C#
 
 ***
 
