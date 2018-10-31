@@ -1,28 +1,16 @@
 # Data Structures and Algorithms
+
+This is a repository for data structure and algorithm studies. Over time, things will become retired 
+and go into an iteration folder. This is a means to remain fresh and up-to-date on existing structures
+and algorithms. 
+
+It also is really just to do deep dive on just about anything related
+
 ***
-## Completed DSA Challenges and Implementations
-1. [ArrayReverse](/Challenges/ArrayReverse/README.md)
-2. [BinarySearch](/Challenges/BinarySearch/README.md)
-3. [AdjacentProduct](/Challenges/AdjacentProduct/README.md)
-*  [Linked List](/Data_Structures/LinkedLists/README.md)
-4. [KthElement](/Challenges/KthElement/README.md)
-5. [MergeLists](/Challenges/MergeLists/README.md)
-*  [Stacks and Queues](/Data_Structures/StacksAndQueues/README.md)
-6. [QueueWithStacks](/Challenges/QueueWithStacks/README.md)
-7. [FIFOAnimalShelter](/Challenges/FIFOAnimalShelter/README.md)
-8. [MultiBracketValidation](/Challenges/MultiBracketValidation/README.md)
-* [BinaryTree and BinarySearchTree](/Data_Structures/Trees/README.md)
-9. [FizzBuzzTree](/Challenges/FizzBuzzTree/README.md)
-10. [FindMaximumValue](/Challenges/FindMax/README.md)
-* [Graphs](/Data_Structures/Graphs/README.md)
-11. [GetEdges](/Challenges/GetEdges/README.md)
-12. [FindIslands](/Challenges/FindIslands/README.md)
-* [HashTable](/Data_Structures/Hashtables/README.md)
-13. [RepeatedWord](/Challenges/RepeatedWord/README.md)
-14. [TreeIntersection](/Challenges/TreeIntersection/README.md)
-15. [LeftJoins](/Challenges/LeftJoins/README.md)
-* [Insertion Sort](/Sorting_Algorithms/InsertionSortAlgo/README.md)
-* [Merge Sort](/Sorting_Algorithms/MergeSortAlgo/README.md)
-* [Quick Sort](/Sorting_Algorithms/QuickSortAlgo/README.md)
-* [Radix Sort](/Sorting_Algorithms/RadixSortAlgo/README.md)
+## Previous Iterations
+1. [First Iteration](/First_Iteration/README.md)
+This was the first iteration as part of the Code Fellows 401 course. These are all done in C#
 ***
+
+## Current Iteration
+
