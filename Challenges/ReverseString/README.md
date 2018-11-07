@@ -7,6 +7,7 @@ Given a string, reverse it
 Visual:
 
 Input -> Hello World!
+
 Output -> !dlroW olleH
 
 #### Challenge
