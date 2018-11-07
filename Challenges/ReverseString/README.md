@@ -1,6 +1,6 @@
 ## Reverse a String
 
-####Problem Domain
+#### Problem Domain
 
 Given a string, reverse it
 
@@ -9,6 +9,6 @@ Visual:
 Input -> Hello World!
 Output -> !dlroW olleH
 
-####Challenge
+#### Challenge
 
 Provide multiple ways to accomplish this task
