@@ -4,9 +4,10 @@
 
 Given a string, reverse it
 
-Visual:
+#### Visual:
 
 Input -> Hello World!
+
 Output -> !dlroW olleH
 
 #### Challenge
