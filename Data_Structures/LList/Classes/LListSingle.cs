@@ -42,8 +42,8 @@ namespace LList.Classes
         /// <summary>
         /// Finds if the specified value exists within the list
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
+        /// <param name="value">Value to be found</param>
+        /// <returns>true if exist, else false</returns>
         public bool Find(object value)
         {
             Node Current = Head;
