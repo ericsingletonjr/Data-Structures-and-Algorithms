@@ -8,6 +8,7 @@ namespace LList.Classes
     {
         //Class Fields
         public Node Next { get; set; }
+        public Node Previous { get; set; }
         public object Value { get; set; }
         //Available Constructors
         public Node(object value)
