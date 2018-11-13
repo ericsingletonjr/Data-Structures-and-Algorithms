@@ -67,5 +67,11 @@ namespace LList.Classes
             }
             Console.WriteLine($"{Current.Value} -> NULL");
         }
+
+        //TODOs:
+        //RemoveNode(object value) removes specific node
+        //AddBefore(Node newNode, Node node) adds newNode before the specific node
+        //AddAfter(Node newNode, Node node) adds newNode after the specific node
+        //FindMiddle() find the middle of the list and return a ref;
     }
 }
