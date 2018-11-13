@@ -11,11 +11,12 @@ namespace LList.Classes
 
         //Available Constructors
         public LListSingle() { }
-
         public LListSingle(Node node)
         {
             Head = node;
         }
+
+        //Methods
         /// <summary>
         /// Adds node directly to the front of the list
         /// O(1)
@@ -37,6 +38,21 @@ namespace LList.Classes
             Head = temp.Next;
             temp.Next = null;
             return temp;
+        }
+        /// <summary>
+        /// Finds if the specified value exists within the list
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public bool Find(object value)
+        {
+            Node Current = Head;
+            while(Current != null)
+            {
+                if(Current.Value == value) return true;
+                Current = Current.Next;
+            }
+            return false;
         }
         /// <summary>
         /// Prints the current list
