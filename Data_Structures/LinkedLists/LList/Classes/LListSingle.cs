@@ -27,6 +27,31 @@ namespace LList.Classes
             node.Next = Head;
             Head = node;
         }
+
+        public void AddNodeBefore(Node newNode, Node node)
+        {
+            Node Current = Head, follower = Head;
+            while(Current != null)
+            {
+                
+            }
+
+        }
+
+        /// <summary>
+        /// Finds the middle of the list and returns a node reference
+        /// </summary>
+        /// <returns>Node reference</returns>
+        public Node MiddleOfList()
+        {
+            Node Current = Head, Runner = Head;
+            while(Runner != null)
+            {
+                Runner = Runner.Next.Next;
+                Current = Current.Next;
+            }
+            return Current;
+        }
         /// <summary>
         /// Removes the front node from the list
         /// O(1)
@@ -72,6 +97,5 @@ namespace LList.Classes
         //RemoveNode(object value) removes specific node
         //AddBefore(Node newNode, Node node) adds newNode before the specific node
         //AddAfter(Node newNode, Node node) adds newNode after the specific node
-        //FindMiddle() find the middle of the list and return a ref;
     }
 }
