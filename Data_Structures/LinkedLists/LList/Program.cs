@@ -22,7 +22,15 @@ namespace LList
 
             Node test = lListSingle.Remove();
             Console.WriteLine($"Removed Node Value: {test.Value}");
-            Console.WriteLine($"Find if Value 2 exists: {lListSingle.Find(2)}");
+            Console.WriteLine($"Find if Value exists: {lListSingle.Find(2)}");
+            Console.WriteLine("====");
+
+            lListSingle.Print();
+            Console.WriteLine("====");
+
+            Node test2 = lListSingle.RemoveNode("first");
+            Console.WriteLine($"Removed Node Value: {test2.Value}");
+            Console.WriteLine($"Find if Value exists: {lListSingle.Find("first")}");
             Console.WriteLine("====");
 
             lListSingle.Print();

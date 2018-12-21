@@ -27,17 +27,6 @@ namespace LList.Classes
             node.Next = Head;
             Head = node;
         }
-
-        public void AddNodeBefore(Node newNode, Node node)
-        {
-            Node Current = Head, follower = Head;
-            while(Current != null)
-            {
-                
-            }
-
-        }
-
         /// <summary>
         /// Finds the middle of the list and returns a node reference
         /// </summary>
@@ -63,6 +52,25 @@ namespace LList.Classes
             Head = temp.Next;
             temp.Next = null;
             return temp;
+        }
+
+        public Node RemoveNode(object value)
+        {
+            if (Head.Value == value) return Remove();
+            Node Current = Head, Walker = Head;
+            while(Current != null)
+            {
+                Current = Current.Next;
+                if(Current.Value == value)
+                {
+                    Node temp = Current;
+                    Walker.Next = temp.Next;
+                    temp.Next = null;
+                    return temp;
+                }
+                Walker = Walker.Next;
+            }
+            return null;           
         }
         /// <summary>
         /// Finds if the specified value exists within the list
