@@ -45,7 +45,7 @@ namespace LList.Classes
         public Node MiddleOfList()
         {
             Node Current = Head, Runner = Head;
-            while(Runner != null)
+            while(Runner.Next != null)
             {
                 Runner = Runner.Next.Next;
                 Current = Current.Next;
