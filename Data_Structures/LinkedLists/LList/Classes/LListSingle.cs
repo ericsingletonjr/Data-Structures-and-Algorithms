@@ -53,7 +53,11 @@ namespace LList.Classes
             temp.Next = null;
             return temp;
         }
-
+        /// <summary>
+        /// Removes the node with the specific value given. 
+        /// </summary>
+        /// <param name="value">Value to be removed</param>
+        /// <returns>With a node if the value exists or null if not found</returns>
         public Node RemoveNode(object value)
         {
             if (Head.Value == value) return Remove();
@@ -102,7 +106,6 @@ namespace LList.Classes
         }
 
         //TODOs:
-        //RemoveNode(object value) removes specific node
         //AddBefore(Node newNode, Node node) adds newNode before the specific node
         //AddAfter(Node newNode, Node node) adds newNode after the specific node
     }
