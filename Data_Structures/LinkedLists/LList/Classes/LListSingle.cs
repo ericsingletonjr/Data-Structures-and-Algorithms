@@ -134,7 +134,6 @@ namespace LList.Classes
         }
 
         //TODOs:
-        //AddBefore(Node newNode, Node node) adds newNode before the specific node
         //AddAfter(Node newNode, Node node) adds newNode after the specific node
     }
 }
