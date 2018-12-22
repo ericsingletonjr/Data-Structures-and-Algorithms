@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using LList.Classes;
 
 namespace LList
@@ -7,11 +8,17 @@ namespace LList
     {
         static void Main(string[] args)
         {
-            LListSingle lListSingle = new LListSingle(new Node("first"));
-            lListSingle.Add(new Node(4));
-            lListSingle.Add(new Node("eight"));
-            lListSingle.Add(new Node("cat"));
-            lListSingle.Add(new Node(2));
+            Node node = new Node("first");
+            Node node2 = new Node(4);
+            Node node3 = new Node("eight");
+            Node node4 = new Node("cat");
+            Node node5 = new Node(2);
+
+            LListSingle lListSingle = new LListSingle(node);
+            lListSingle.Add(node2);
+            lListSingle.Add(node3);
+            lListSingle.Add(node4);
+            lListSingle.Add(node5);
             lListSingle.Print();
 
             Console.WriteLine($"Finding middle of list: {lListSingle.MiddleOfList().Value}");
@@ -28,12 +35,19 @@ namespace LList
             lListSingle.Print();
             Console.WriteLine("====");
 
-            Node test2 = lListSingle.RemoveNode("first");
+            Node node6 = new Node(8);
+            lListSingle.AddNodeBefore(node6, node3);
+            lListSingle.Print();
+            Console.WriteLine("====");
+
+            Node test2 = lListSingle.RemoveNode(8);
             Console.WriteLine($"Removed Node Value: {test2.Value}");
-            Console.WriteLine($"Find if Value exists: {lListSingle.Find("first")}");
+            Console.WriteLine($"Find if Value exists: {lListSingle.Find("eight")}");
             Console.WriteLine("====");
 
             lListSingle.Print();
+
         }
     }
 }
+   

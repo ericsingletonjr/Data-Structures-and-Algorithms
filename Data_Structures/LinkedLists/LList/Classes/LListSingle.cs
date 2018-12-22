@@ -28,6 +28,34 @@ namespace LList.Classes
             Head = node;
         }
         /// <summary>
+        /// Inserts a new node beforea given node
+        /// </summary>
+        /// <param name="newNode">New node to be inserted</param>
+        /// <param name="node">Existing node</param>
+        /// <returns>Bool based a success</returns>
+        public bool AddNodeBefore(Node newNode, Node node)
+        {
+            if(node == Head)
+            {
+                Add(node);
+                return true;
+            }
+
+            Node Current = Head, Walker = Head;
+            while(Current != null)
+            {
+                Current = Current.Next;
+                if(Current == node)
+                {
+                    newNode.Next = Current;
+                    Walker.Next = newNode;
+                    return true;
+                }
+                Walker = Walker.Next;
+            }
+            return false;
+        }
+        /// <summary>
         /// Finds the middle of the list and returns a node reference
         /// </summary>
         /// <returns>Node reference</returns>
@@ -65,7 +93,7 @@ namespace LList.Classes
             while(Current != null)
             {
                 Current = Current.Next;
-                if(Current.Value == value)
+                if(Current.Value.Equals(value))
                 {
                     Node temp = Current;
                     Walker.Next = temp.Next;
