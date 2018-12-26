@@ -56,6 +56,34 @@ namespace LList.Classes
             return false;
         }
         /// <summary>
+        /// Adds a node after the specific node
+        /// </summary>
+        /// <param name="newNode">Node to be added</param>
+        /// <param name="node">specificed node</param>
+        /// <returns>True/False based on if it was successful or not</returns>
+        public bool AddNodeAfter(Node newNode, Node node)
+        {
+            if(node == Head)
+            {
+                node.Next = Head;
+                Head = node;
+                return true;
+            }
+
+            Node Current = Head.Next;
+            while(Current != null)
+            {
+                if(Current == node)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    return true;
+                }
+                Current = Current.Next;
+            }
+            return false;
+        }
+        /// <summary>
         /// Finds the middle of the list and returns a node reference
         /// </summary>
         /// <returns>Node reference</returns>
@@ -132,8 +160,5 @@ namespace LList.Classes
             }
             Console.WriteLine($"{Current.Value} -> NULL");
         }
-
-        //TODOs:
-        //AddAfter(Node newNode, Node node) adds newNode after the specific node
     }
 }

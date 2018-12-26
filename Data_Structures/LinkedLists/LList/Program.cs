@@ -42,11 +42,15 @@ namespace LList
 
             Node test2 = lListSingle.RemoveNode(8);
             Console.WriteLine($"Removed Node Value: {test2.Value}");
-            Console.WriteLine($"Find if Value exists: {lListSingle.Find("eight")}");
+            Console.WriteLine($"Find if Value exists: {lListSingle.Find(8)}");
             Console.WriteLine("====");
 
             lListSingle.Print();
+            Console.WriteLine("====");
 
+            Node newNode = new Node("After");
+            lListSingle.AddNodeAfter(newNode, node3);
+            lListSingle.Print();
         }
     }
 }
