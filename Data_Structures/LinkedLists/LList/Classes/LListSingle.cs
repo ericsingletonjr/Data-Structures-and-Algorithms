@@ -37,7 +37,7 @@ namespace LList.Classes
         {
             if(node == Head)
             {
-                Add(node);
+                Add(newNode);
                 return true;
             }
 
