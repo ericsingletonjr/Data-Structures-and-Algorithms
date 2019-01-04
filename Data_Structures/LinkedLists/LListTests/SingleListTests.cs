@@ -34,6 +34,22 @@ namespace LListTests
             ll.Add(newNode);
             Assert.Equal(value, ll.Head.Value);
         }
+        [Fact]
+        public void ChainAddNodeMethodUpdatesHead()
+        {
+            LListSingle ll = new LListSingle();
+            Node first = new Node("first");
+            Node second = new Node("second");
+            Node third = new Node("third");
+            Node fourth = new Node("fourth");
+
+            ll.AddNode(first)
+              .AddNode(second)
+              .AddNode(third)
+              .AddNode(fourth);
+
+            Assert.Equal(fourth.Value, ll.Head.Value);
+        }
         [Theory]
         [InlineData("Cat")]
         [InlineData("Dog")]
@@ -267,6 +283,15 @@ namespace LListTests
 
             var find = ll.Find("Bob");
             Assert.False(find);
+        }
+        [Fact]
+        public void CheckPrintMethodForCodeCoverage()
+        {
+            LListSingle ll = new LListSingle();
+            ll.AddNode(new Node("a"))
+              .AddNode(new Node("b"))
+              .AddNode(new Node("c"));
+            ll.Print();
         }
     }
 }

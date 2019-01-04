@@ -28,6 +28,18 @@ namespace LList.Classes
             Head = node;
         }
         /// <summary>
+        /// Adds node directly to the front of the list but is set up
+        /// for chain-adding nodes
+        /// </summary>
+        /// <param name="node">Node to be added</param>
+        /// <returns>this instance of a list</returns>
+        public LListSingle AddNode(Node node)
+        {
+            node.Next = Head;
+            Head = node;
+            return this;
+        }
+        /// <summary>
         /// Inserts a new node beforea given node
         /// </summary>
         /// <param name="newNode">New node to be inserted</param>
