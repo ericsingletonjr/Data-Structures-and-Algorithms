@@ -65,8 +65,8 @@ namespace LList.Classes
         {
             if(node == Head)
             {
-                node.Next = Head;
-                Head = node;
+                newNode.Next = Head.Next;
+                Head.Next = newNode;
                 return true;
             }
 
@@ -118,7 +118,7 @@ namespace LList.Classes
         {
             if (Head.Value == value) return Remove();
             Node Current = Head, Walker = Head;
-            while(Current != null)
+            while(Current.Next != null)
             {
                 Current = Current.Next;
                 if(Current.Value.Equals(value))

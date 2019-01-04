@@ -40,7 +40,7 @@ namespace LList
             lListSingle.Print();
             Console.WriteLine("====");
 
-            Node test2 = lListSingle.RemoveNode(8);
+            Node test2 = lListSingle.RemoveNode("first");
             Console.WriteLine($"Removed Node Value: {test2.Value}");
             Console.WriteLine($"Find if Value exists: {lListSingle.Find(8)}");
             Console.WriteLine("====");
