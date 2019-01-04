@@ -28,6 +28,18 @@ namespace LList.Classes
             Head = node;
         }
         /// <summary>
+        /// Adds node directly to the front of the list but is set up
+        /// for chain-adding nodes
+        /// </summary>
+        /// <param name="node">Node to be added</param>
+        /// <returns>this instance of a list</returns>
+        public LListSingle AddNode(Node node)
+        {
+            node.Next = Head;
+            Head = node;
+            return this;
+        }
+        /// <summary>
         /// Inserts a new node beforea given node
         /// </summary>
         /// <param name="newNode">New node to be inserted</param>
@@ -37,7 +49,7 @@ namespace LList.Classes
         {
             if(node == Head)
             {
-                Add(node);
+                Add(newNode);
                 return true;
             }
 
@@ -65,8 +77,8 @@ namespace LList.Classes
         {
             if(node == Head)
             {
-                node.Next = Head;
-                Head = node;
+                newNode.Next = Head.Next;
+                Head.Next = newNode;
                 return true;
             }
 
@@ -118,7 +130,7 @@ namespace LList.Classes
         {
             if (Head.Value == value) return Remove();
             Node Current = Head, Walker = Head;
-            while(Current != null)
+            while(Current.Next != null)
             {
                 Current = Current.Next;
                 if(Current.Value.Equals(value))
