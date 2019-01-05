@@ -8,11 +8,24 @@ namespace LList
     {
         static void Main(string[] args)
         {
-            //Node node = new Node("first");
-            //Node node2 = new Node(4);
-            //Node node3 = new Node("eight");
-            //Node node4 = new Node("cat");
-            //Node node5 = new Node(2);
+
+            Node node = new Node("first");
+            Node node2 = new Node(4);
+            Node node3 = new Node("eight");
+            Node node4 = new Node("cat");
+            Node node5 = new Node(2);
+
+            LListDouble ll = new LListDouble(node);
+            ll.AddNode(node2)
+              .AddNode(node3);
+            //  .AddNode(node4)
+            //  .AddNode(node5);
+
+            ll.Print();
+            Console.WriteLine("/=========\\");
+            ll.AddNodeBefore(node4, node);
+            ll.Print();
+            //Console.WriteLine($"Node 3: {node3.Value}| Previous: {node3.Previous.Value}| Next: {node3.Next.Value}");
 
             //LListSingle lListSingle = new LListSingle(node);
 
