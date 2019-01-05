@@ -8,6 +8,7 @@ namespace LList.Classes
     {
         //Class Fields
         public Node Head { get; set; }
+        public Node Tail { get; set; }
 
         //Available Contrsuctors
         public LListDouble() { }
@@ -23,6 +24,11 @@ namespace LList.Classes
         /// <param name="node">Node to be added</param>
         public void Add(Node node)
         {
+            if(Head.Next == null)
+            {
+                Tail = Head;
+                Tail.Previous = node;
+            }
             node.Next = Head;
             Head.Previous = node;
             Head = node;
@@ -35,6 +41,11 @@ namespace LList.Classes
         /// <returns>List reference</returns>
         public LListDouble AddNode(Node node)
         {
+            if (Head.Next == null)
+            {
+                Tail = Head;
+                Tail.Previous = node;
+            }
             node.Next = Head;
             Head.Previous = node;
             Head = node;

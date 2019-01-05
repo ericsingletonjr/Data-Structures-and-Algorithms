@@ -23,8 +23,9 @@ namespace LList
 
             ll.Print();
             Console.WriteLine("/=========\\");
-            ll.AddNodeBefore(node4, node);
+            ll.AddNodeBefore(node4, node2);
             ll.Print();
+            Console.WriteLine($"LL tail: {ll.Tail.Value}| Previous: {ll.Tail.Previous.Value}| Next: {ll.Tail.Next}");
             //Console.WriteLine($"Node 3: {node3.Value}| Previous: {node3.Previous.Value}| Next: {node3.Next.Value}");
 
             //LListSingle lListSingle = new LListSingle(node);
